@@ -2,7 +2,7 @@
 
 Cours sur la qualité du code.
 
-## Image Docker
+## Image Docker.
 
 ```sh
 docker pull selenium/standalone-chrome-debug
