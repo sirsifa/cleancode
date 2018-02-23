@@ -1,5 +1,7 @@
 language: php
 
+sudo: false
+
 php:
   - "7.1"
   - "7.2"
@@ -13,10 +15,10 @@ before_install:
   - composer self-update
 
 install:
-  - composer install --no-interaction  --prefer-source
+  - composer install --no-interaction --prefer-source
 
 script:
-  - ./vendor/bin/phpunit --colors always --configuration phpunit.xml
+  - ./vendor/bin/phpunit --colors=always --configuration phpunit.xml
 
 after_script:
   - docker-compose down -v
